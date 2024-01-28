@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 3059559719319062022}
   - component: {fileID: 6428089661962766669}
   - component: {fileID: -1000818214161460617}
-  - component: {fileID: -3555121577535432438}
   - component: {fileID: -8522749560719602866}
   m_Layer: 0
   m_Name: Slot 1
@@ -42,7 +41,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8998085822153490136}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -132,18 +131,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &-3555121577535432438
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8998085822153490136}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c400133697afaa47ab4ad81a920a5e0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!50 &-8522749560719602866
 Rigidbody2D:
   serializedVersion: 4
