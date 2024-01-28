@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: d953ec246ecb6a84596320f798bc563e
+guid: 140dd6ef155ac624685c8f8e1b4f4afa
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -69,7 +69,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -121,7 +121,133 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: DeathScreenGoA_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 315
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f069b9869acef644ca68b05b2b0fa51c
+      internalID: -428131004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathScreenGoA_1
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 0
+        width: 315
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23dd8e48c2eb76f4489d01aa36ace244
+      internalID: -90496895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathScreenGoA_2
+      rect:
+        serializedVersion: 2
+        x: 638
+        y: 0
+        width: 315
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2776b5fb97efc9a43b09179a1a9d5c3c
+      internalID: 556117109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathScreenGoA_3
+      rect:
+        serializedVersion: 2
+        x: 957
+        y: 0
+        width: 315
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4906610a9cc0acd47aba8eb6a590c76a
+      internalID: 1904186156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathScreenGoA_4
+      rect:
+        serializedVersion: 2
+        x: 1276
+        y: 0
+        width: 315
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46779b12e25346347b326f2e1977c362
+      internalID: 199374224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeathScreenGoA_5
+      rect:
+        serializedVersion: 2
+        x: 1595
+        y: 0
+        width: 315
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26e42dde1c9ace94da9b79b4cd00ab56
+      internalID: 438297462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -132,7 +258,13 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      DeathScreenGoA_0: -428131004
+      DeathScreenGoA_1: -90496895
+      DeathScreenGoA_2: 556117109
+      DeathScreenGoA_3: 1904186156
+      DeathScreenGoA_4: 199374224
+      DeathScreenGoA_5: 438297462
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

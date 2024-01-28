@@ -28,8 +28,8 @@ public class SlotCheck : MonoBehaviour
 
     public void SpawnObstaculo(GameObject poder)
     {
-        int randomNum = Random.Range(0, 2);
+        int randomNum = Random.Range(0, listaSlots.Count - 1);
         var power =Instantiate(poder.gameObject, listaSlots.ElementAt(randomNum).transform);
-        power.transform.position = Vector3.zero;
+        power.transform.localPosition = Vector3.zero;
     }
 }

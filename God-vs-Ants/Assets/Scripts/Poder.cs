@@ -1,15 +1,37 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Poder : MonoBehaviour
 {
     public SlotCheck SlotCheck;
     public GameObject poder;
-    
-    private void OnMouseUpAsButton()
+
+    public float tempo, tempoOriginal = 3f;
+    public bool comecarTempo;
+
+    private void Start()
     {
-        SlotCheck.SpawnObstaculo(poder);
+        tempo = tempoOriginal;
+    }
+
+    private void Update()
+    {
+        if (comecarTempo) {
+            tempo -= Time.deltaTime;
+
+            if (tempo <= 0)
+            {
+                tempo = tempoOriginal;
+                comecarTempo = false;
+            }
+        }
+        
+    }
+
+    public void SpawnPoder() {
+        if (!comecarTempo) {
+            comecarTempo = true;
+            SlotCheck.SpawnObstaculo(poder);
+        }
     }
 }
