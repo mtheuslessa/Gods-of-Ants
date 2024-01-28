@@ -13,7 +13,7 @@ public class AntMoviment : MonoBehaviour
 
     private void Start() {
         _faixaAtual = 1;
-        _targetPosicao = new Vector3(-4.5f, 0.5f, 0);
+        _targetPosicao = new Vector3(-4.25f, 0.75f, 0);
     }
 
     public void Update()
@@ -30,6 +30,8 @@ public class AntMoviment : MonoBehaviour
             transform.localPosition,
             _targetPosicao,
             mudancaFaixa * Time.deltaTime);
+        
+        mudancaFaixa += 0.1f * Time.deltaTime;
     }
 
     public void ChangeLane(int direcao) {
@@ -40,6 +42,6 @@ public class AntMoviment : MonoBehaviour
 
         _faixaAtual = laneAlvo;
 
-        _targetPosicao = new Vector3(-4.5f, ((_faixaAtual - 1) * offsetFaixa) + 0.5f, 0);
+        _targetPosicao = new Vector3(-4.25f, ((_faixaAtual - 1) * offsetFaixa) + 0.75f, 0);
     }
 }

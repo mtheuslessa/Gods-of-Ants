@@ -7,8 +7,10 @@ public class SlotCheck : MonoBehaviour
 {
     private bool _mouseOver;
     private SpriteRenderer _spriteRenderer;
+    
+    public List<GameObject> listaSlots;
 
-    private void Start()
+    /*private void Start()
     {
         _spriteRenderer = GetComponent<SpriteRenderer>();
     }
@@ -31,6 +33,20 @@ public class SlotCheck : MonoBehaviour
     private void OnTriggerExit2D(Collider2D other) {
         if (!_mouseOver) {
             
+        }
+    }*/
+    
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.tag.Equals("Slot")) {
+            listaSlots.Add(other.gameObject);
+        }
+    }
+    
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.gameObject.tag.Equals("Slot")) {
+            listaSlots.Remove(other.gameObject);
         }
     }
 }

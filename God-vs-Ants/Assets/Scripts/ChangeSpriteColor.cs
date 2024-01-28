@@ -4,23 +4,16 @@ using Random = UnityEngine.Random;
 
 public class ChangeSpriteColor : MonoBehaviour
 {
-    public SpriteRenderer corpoFormiga, membroFormiga;
+    public SpriteRenderer corpoFormiga;
     
     void Start() {
         ChangeSpriteFormiga();
     }
 
     public void ChangeSpriteFormiga() {
-        var r = Random.Range(0, 255);
-        var g = Random.Range(0, 255);
-        var b = Random.Range(0, 255);
-        corpoFormiga.color = new Color(r, g, b);
-        membroFormiga.color = new Color(r - 50, g -50, b - 50);
-    }
-
-    private void Update() {
-        if (Input.GetMouseButtonDown(0)) {
-            ChangeSpriteFormiga();
-        }
+        var r = (float)Random.Range(0, 255);
+        var g = (float)Random.Range(0, 255);
+        var b = (float)Random.Range(0, 255);
+        corpoFormiga.color = Random.ColorHSV(0,1,0,1,0.5f,1,1,1);
     }
 }
