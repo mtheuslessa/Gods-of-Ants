@@ -6,6 +6,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UIElements;
 using Image = UnityEngine.UI.Image;
+using Random = UnityEngine.Random;
 
 public class Morte : MonoBehaviour
 {
@@ -16,6 +17,10 @@ public class Morte : MonoBehaviour
 
     public TextMeshProUGUI texto;
 
+    public AudioSource[] vozes;
+    public AudioSource papel;
+    public AudioSource[] deus;
+
     private void Start()
     {
         movimentoTerreno = GetComponent<MovimentoTerreno>();
@@ -23,7 +28,7 @@ public class Morte : MonoBehaviour
 
     private void Update()
     {
-        if (Input.anyKeyDown)
+        if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.KeypadEnter) || Input.GetKeyDown(KeyCode.Return))
         {
             SceneManager.LoadScene("Menu");
         }
@@ -40,6 +45,12 @@ public class Morte : MonoBehaviour
                 image.sprite = sprites[1];
                 break;
         }
+
+        int audio = Random.Range(0, vozes.Length);
+
+        vozes[audio].Play();
+        papel.Play();
+        deus[audio].PlayDelayed(vozes[audio].clip.length);
 
         setDistancia();
     }

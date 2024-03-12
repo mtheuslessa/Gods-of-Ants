@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 
 public class ColisaoFormiga : MonoBehaviour {
     public GameObject morte, imagem;
+    public AntMoviment movimentoAnt;
     public MovimentoTerreno movimentoTerreno;
 
     private void Start()
@@ -19,6 +20,7 @@ public class ColisaoFormiga : MonoBehaviour {
         if (other.gameObject.tag.Equals("Obstaculo")){
             morte.SetActive(true);
             movimentoTerreno.Stop();
+            movimentoAnt.Stop();
             if(other.name.Contains("Bota")){
                 imagem.GetComponent<Morte>().setImagem(0);
             }else {
